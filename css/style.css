@@ -19,33 +19,33 @@
 body {
     margin: 0px;
     width: 100%;
+    margin-bottom: 1000px;
 }
 
-h2 {
-    font-family: 'helvetica_thin';
-    letter-spacing: 2px;
-    color: #ff9600;
-    z-index: 99;
-    position: absolute;
-    margin-top: -280px;
-    font-size: 2em;
-    margin-left: 50%;
+#banner {
+    width: 100%;
+    float: left;
 }
 
 #brewhouselogo {
-    margin-bottom: -300px;
-    z-index: 1;
+    width: 18%;
+    z-index: 2;
+    margin-left: 7%;
     position: absolute;
-    width: 20%;
-    margin-left: 5%;
 }
 
 #headerimage {
     width: 100%;
+    z-index: 1;
+    position: absolute;
 }
 
 #orangebox {
     width: 100%;
+    float: left;
+    z-index: 1;
+    position: absolute;
+    margin-top: 42%;
     height: 50%;
     background-color: #ff9600;
 }
@@ -53,27 +53,41 @@ h2 {
 #toph1 {
     font-family: 'helvetica_bold';
     color: #ffffff;
-    z-index: 99;
-    position: absolute;
-    margin-top: -400px;
     font-size: 7em;
-    margin-left: 29.5%;
+    float: left;
+    z-index: 3;
+    position: absolute;
+    margin-left: 27.5%;
+}
+
+#paleale {
+    font-family: 'helvetica_thin';
+    letter-spacing: 2px;
+    color: #ff9600;
+    font-size: 2em;
+    float: left;
+    z-index: 3;
+    position: absolute;
+    margin-left: 48%;
+    margin-top: 10%;
 }
 
 #barleylogo {
-    width: 40%;
-    z-index: 1;
+    width: 50%;
+    float: left;
+    margin-top: -10%;
+    margin-left: 42%;
+    z-index: 2;
     position: absolute;
-    margin-top: -750px;
-    margin-left: 45%;
 }
 
 #beercan {
     width: 20%;
-    z-index: 50;
+    float: left;
+    margin-top: -6%;
+    margin-left: 77%;
+    z-index: 3;
     position: absolute;
-    margin-top: -700px;
-    margin-left: 70%;
 }
 
 #happyman {
