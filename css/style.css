@@ -1,3 +1,4 @@
+/*FONTS*/
 @font-face {
     font-family: 'helvetica_thin';
     src: url('../Assets/Fonts/webfontkit-20190823-220243/helveticaneue-thin-webfont.woff2') format('woff2'),
@@ -16,12 +17,23 @@
 
 }
 
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('../Assets/Fonts/webfontkit-20190824-210721/helveticaneue-roman-webfont.woff2') format('woff2'),
+         url('../Assets/Fonts/webfontkit-20190824-210721/helveticaneue-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*ELEMENT TAGS*/
 body {
     margin: 0px;
     width: 100%;
-    margin-bottom: 1000px;
+    margin-bottom: 180%;
 }
 
+/*THE ASSETS THAT IN THE MAIN BANNER*/
 #banner {
     width: 100%;
     float: left;
@@ -40,6 +52,7 @@ body {
     position: absolute;
 }
 
+/*ASSESTS WITHIN THE ORANGE BOX*/
 #orangebox {
     width: 100%;
     float: left;
@@ -50,28 +63,28 @@ body {
     background-color: #ff9600;
 }
 
-#toph1 {
+#orangebox h1 {
     font-family: 'helvetica_bold';
     color: #ffffff;
-    font-size: 7em;
+    font-size: 8em;
     float: left;
     z-index: 3;
     position: absolute;
-    margin-left: 27.5%;
+    margin-left: 25%;
     margin-top: 7%;
     letter-spacing: 3px;
 }
 
-#paleale {
+#orangebox h2 {
     font-family: 'helvetica_thin';
     letter-spacing: 2px;
     color: #ff9600;
-    font-size: 2em;
+    font-size: 3em;
     float: left;
     z-index: 3;
     position: absolute;
-    margin-left: 49%;
-    margin-top: 13.5%;
+    margin-left: 47%;
+    margin-top: 14.5%;
 }
 
 #barleylogo {
@@ -92,6 +105,102 @@ body {
     position: absolute;
 }
 
+/*ABOUT SECTION ASSETS*/
+#about {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    float: left;
+    margin-top: 80%;
+}
+
+#about h1 {
+    font-family: 'helvetica_bold';
+    font-size: 10em;
+    opacity: 0.05;
+    float: left;
+    margin-left: 20%;
+    z-index: 1;
+    position: absolute;
+    color: #3f4c65;
+    margin-top: 2%;
+}
+
+#about p {
+    font-family: 'helvetica_neueregular';
+    width: 55%;
+    font-size: 3em;
+    opacity: .6;
+    float: left;
+    z-index: 2;
+    position: absolute;
+    margin-left: 33.5%;
+    margin-top: 7.5%;
+}
+
+#about a {
+    background-color: #3f4c65;
+    width: 32%;
+    float: left;
+    color: #ffffff;
+    font-family: 'helvetica_neueregular';
+    font-weight: 100;
+    text-align: right;
+    padding: .25%;
+    padding-right: .75%;
+    z-index: 2;
+    position: absolute;
+    margin-left: 51.5%;
+    margin-top: 22%;
+    text-decoration: none;
+    font-size: 3em;
+}
+
+#about a:hover {
+    color: #ff9600;
+    text-decoration: underline;
+}
+
+/*ASSETS WITH THE HAPPY MAN SECTION*/
+#theprocess {
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    float: left;
+    margin-top: 110%;
+}
+
 #happyman {
     width: 100%;
+    z-index: 1;
+    position: absolute;
+    float: left;
+}
+
+#theprocess h1 {
+    font-family: 'helvetica_bold';
+    font-size: 12em;
+    opacity: 0.4;
+    float: left;
+    margin-left: 45%;
+    z-index: 3;
+    position: absolute;
+    color: #ffffff;
+    margin-top: 23%;
+    line-height: 100%;
+}
+
+#theprocess p {
+    background-color: #3f4c65;
+    width: 50%;
+    float: left;
+    color: #ffffff;
+    font-family: 'helvetica_neueregular';
+    z-index: 2;
+    position: absolute;
+    font-size: 3em;
+    padding: 3%;
+    padding-top: 7%;
+    margin-top: 39%;
+    margin-left: 36%;
 }
