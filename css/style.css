@@ -43,7 +43,6 @@ body {
     width: 18%;
     z-index: 2;
     margin-left: 7%;
-    margin-right: 93%;
     position: absolute;
 }
 
@@ -120,7 +119,6 @@ body {
     float: left;
     margin-top: -10%;
     margin-left: 42%;
-    margin-right: 58%;
     z-index: 2;
     position: absolute;
 }
@@ -310,11 +308,52 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-    div {
+    #brewhouselogo {
+        width: 75%:
+    }
+
+    #orangebox {
+        height: 95vw;
+    }
+    
+    #orangebox h1 {
+        margin-top: 5%;
+        margin-left: 13%;
+        font-size: 13vw;
+    }
+    #orangebox h2 {
+        margin-top: 21%;
+        margin-left: 14%;
+        font-size: 6vw;
+    }
+
+    #orangebox span {
         display: none;
     }
 
-    body {
-        background-color: pink; 
+    #orangebox p {
+        font-size: 5vw;
+        margin-left: 52%;
+        margin-top: 69%;
+    }
+
+    #barleylogo {
+        width: 75%;
+        margin-top: 18%;
+        margin-left: 10%
+    }
+
+    #beercan {
+        width: 30%;
+        margin-left: 60%;
+        margin-top: 25%;
+    }
+
+    #about {
+        display: none;
+    }
+
+    #theprocess {
+        display: none;
     }
 }
