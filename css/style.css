@@ -235,26 +235,24 @@ body {
     margin-left: 36%;
 }
 
-/* Tablets, Ipads (portrait) */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    div {
-        display: none;
-    }
-
-    body {
-        background-color: red; 
-    }
-}
-
-/* Most of the Smartphones Mobiles (Portrait) */
-
-@media (min-width: 320px) and (max-width: 480px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
     div {
         display: none;
     }
 
     body {
         background-color: blue; 
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    div {
+        display: none;
+    }
+
+    body {
+        background-color: red; 
     }
 }
