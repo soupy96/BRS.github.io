@@ -133,7 +133,7 @@ body {
     position: absolute;
 }
 
-/* Float */
+/* This is the Float animation on some of the images*/
 .hvr-float {
   display: inline-block;
   vertical-align: middle;
