@@ -68,31 +68,31 @@ body {
 #dotbar1 {
     background-color: #ffffff;
     width: 2px;
-    height: 10.5vh;
-    z-index: 900;
+    height: 100px;
+    z-index: 998;
     position: fixed;
-    margin-left: 2.45%;
-    margin-top: 17%;
+    margin-left: 17px;
+    margin-top: -100px;
 }
 
 #dotbar2 {
     background-color: #ffffff;
     width: 2px;
-    height: 10.5vh;
+    height: 100px;
     z-index: 900;
     position: fixed;
-    margin-left: 2.45%;
-    margin-top: 23.5%;
+    margin-left: 17px;
+    margin-top: -100px;
 }
 
 #dotbar3 {
     background-color: #ffffff;
     width: 2px;
-    height: 10.5vh;
+    height: 100px;
     z-index: 900;
     position: fixed;
-    margin-left: 2.45%;
-    margin-top: 30.25%;
+    margin-left: 17px;
+    margin-top: -100px;
 }
 
 /*THE ASSETS THAT ARE IN THE MAIN BANNER*/
@@ -457,6 +457,25 @@ body {
         width: 15px;
         height: 15px;
         margin-bottom: 50px;
+    }
+
+    /*These are the bars behind the dots*/
+    #dotbar1 {
+        height: 50px;
+        margin-left: 14.5px;
+        margin-top: -50px;
+    }
+
+    #dotbar2 {
+        height: 50px;
+        margin-left: 14.5px;
+        margin-top: -50px;
+    }
+
+    #dotbar3 {
+        height: 50px;
+        margin-left: 14.5px;
+        margin-top: -50px;
     }
 
     /*ELEMENT TAGS*/
