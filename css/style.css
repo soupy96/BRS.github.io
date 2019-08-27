@@ -236,10 +236,12 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 
+    /*ELEMENT TAGS*/
     body {
         margin-bottom: 220%;
     }
 
+    /*ASSESTS WITHIN THE ORANGE BOX*/
     #orangebox {
         height: 50vw;
     }
@@ -275,6 +277,7 @@ body {
         margin-top: 8%;
     }
 
+    /*ABOUT SECTION ASSETS*/
     #about {
         margin-top: 105%;
     }
@@ -292,6 +295,7 @@ body {
         margin-top: 25%;
     }
 
+    /*ASSETS WITH THE HAPPY MAN SECTION*/
     #theprocess {
         margin-top: 145%;
     }
@@ -308,10 +312,20 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
+
+    /*ELEMENT TAGS*/
+    body {
+        margin-bottom: 285%;
+    }
+    
+    /*THE ASSETS THAT ARE IN THE MAIN BANNER*/
     #brewhouselogo {
-        width: 75%:
+        width: 35%;
+        margin-left: -1%;
+        margin-top: 5%;
     }
 
+    /*ASSESTS WITHIN THE ORANGE BOX*/
     #orangebox {
         height: 95vw;
     }
@@ -349,11 +363,45 @@ body {
         margin-top: 25%;
     }
 
+    /*ABOUT SECTION ASSETS*/
     #about {
-        display: none;
+        margin-top: 145%;
     }
 
+    #about h1 {
+        font-size: 16vw;
+        margin-left: 5%;
+    }
+
+    #about p {
+        width: 75%;
+        margin-left: 15.5%;
+        margin-top: 22%;
+        font-size: 3.5vw;
+    }
+
+    #about a {
+        margin-top: 43%;
+        font-size: 3.5vw;
+        margin-left: 53%;
+    }
+
+    /*ASSETS WITH THE HAPPY MAN SECTION*/
     #theprocess {
-        display: none;
+        margin-top: 200%;
+    }
+
+    #theprocess h1 {
+        font-size: 11vw;
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+
+    #theprocess p {
+        font-size: 3.5vw;
+        width: 75%;
+        margin-left: 12%;
+        margin-top: 40%;
+        padding-top: 5%; 
     }
 }
