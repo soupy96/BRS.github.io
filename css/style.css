@@ -60,7 +60,7 @@ body {
     z-index: 1;
     position: absolute;
     margin-top: 42%;
-    height: 50%;
+    height: 27vw;
     background-color: #ff9600;
 }
 
@@ -91,7 +91,7 @@ body {
 #orangebox span {
     background-color: #ff9600;
     width: 5px;
-    height: 317px;
+    height: 16.5vw;
     float: left;
     z-index: 3;
     position: absolute;
@@ -235,22 +235,26 @@ body {
     margin-left: 36%;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1200px) {
+/* Tablets, Ipads (portrait) */
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    div {
+        display: none;
+    }
+
+    body {
+        background-color: red; 
+    }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
-    
-}
+/* Most of the Smartphones Mobiles (Portrait) */
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    
-}
+@media (min-width: 320px) and (max-width: 480px) {
+    div {
+        display: none;
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-    
+    body {
+        background-color: blue; 
+    }
 }
