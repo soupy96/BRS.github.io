@@ -3,16 +3,72 @@
         <!--This is the interview coding component for Blackridge Strategy-->
         <title>Blackridge Strategy Interview Coding Component</title>
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                    $("#first").addClass('scroll_item_active');
+                    var main = main = $('#scroll');
+                    $('.scroll_item').click(function (event) {
+
+                        event.preventDefault();
+                        var trgt = $(this).attr('id') + "1";
+                        target_offset = $('#' + trgt).offset(),
+                            target_top = target_offset.top;
+                        $('html, body').animate({
+                            scrollTop: target_top
+                        }, 500);
+                        main.children().removeClass('scroll_item_active');
+
+                        $(this).addClass('scroll_item_active');
+
+                    });
+
+                    $(window).scroll(function (event) {
+                        if ($("#first1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+                            $("#first").addClass('scroll_item_active');
+                            $("#second").removeClass('scroll_item_active');
+                            $("#third").removeClass('scroll_item_active');
+                            $("#fourth").removeClass('scroll_item_active');
+                        }
+                        if ($("#second1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+                            $("#second").addClass('scroll_item_active');
+                            $("#first").removeClass('scroll_item_active');
+                            $("#third").removeClass('scroll_item_active');
+                            $("#fourth").removeClass('scroll_item_active');
+
+                        }
+                        if ($("#third1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+                            $("#third").addClass('scroll_item_active');
+                            $("#first").removeClass('scroll_item_active');
+                            $("#second").removeClass('scroll_item_active');
+                            $("#fourth").removeClass('scroll_item_active');
+                        }
+                        if ($("#fourth1").offset().top < $(window).scrollTop() + $(window).outerHeight()) {
+                            $("#fourth").addClass('scroll_item_active');
+                            $("#first").removeClass('scroll_item_active');
+                            $("#second").removeClass('scroll_item_active');
+                            $("#third").removeClass('scroll_item_active');
+                        }
+                    });
+                });
+        </script>
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
     </head>
     <body>
+        <!--The dots on the side-->
+        <div id="scroll">
+            <div id="first" class="scroll_item">&nbsp;</div>
+            <div id="second" class="scroll_item">&nbsp;</div>
+            <div id="third" class="scroll_item">&nbsp;</div>
+            <div id="fourth" class="scroll_item">&nbsp;</div>
+        </div>
         <!--This is the top banner with the two men drinking beer and the logo-->
-        <div id="banner">
+        <div id="first1" class="banner" >
             <img id="brewhouselogo" class="hvr-float" src="Assets/Logo/BrewhouseLogo-01.png" alt="Brew House Logo">
             <img id="headerimage" src="Assets/Images/images/Header-Image.jpg" alt="Men enjoying beers"></img>
         </div>
         <!--This is the orange box with the beer can in it-->
-        <div id="orangebox">
+        <div id="second1" class="orangebox">
             <h1>UPDRAFT</h1>
             <h2>PALE ALE</h2>
             <span></span>
@@ -21,13 +77,13 @@
             <p>5%</p>
         </div>
         <!--This is the about section with a link-->
-        <div id="about">
+        <div id="third1" class="about">
             <h1>ABOUT US</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum consectetur orci eu dapibus. Quisque condimentum tortor sed erat vestibulum, ut euismod est varius.</p>
             <a href="#" class="hvr-bob hvr-sweep-to-top">Read More</a>
         </div>
         <!--This is the section with the man pouring himself a beer-->
-        <div id="theprocess">
+        <div id="fourth1" class="theprocess">
             <img id="happyman" src="Assets/Images/images/MidImage.png" alt="Man using beer keg">
             <h1>THE<br/>PROCESS</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum consectetur orci eu dapibus. Quisque condimentum tortor sed erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
